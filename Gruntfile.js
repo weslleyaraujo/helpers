@@ -29,7 +29,7 @@ module.exports = function (grunt) {
 
 		watch: {
 			scripts: {
-				files: ['Gruntfile.js', 'lib/*.js'],
+				files: ['Gruntfile.js', 'lib/*.js', 'spec/*.js'],
 				tasks: ['jshint', 'jasmine'],
 				options: {
 					spawn: false
