@@ -4,10 +4,13 @@ module.exports = function (grunt) {
 	var tasks = [
 		'grunt-contrib-jasmine',
 		'grunt-contrib-jshint',
-		'grunt-contrib-watch'
+		'grunt-contrib-watch',
+		'grunt-contrib-yuidoc'
 	];
 
 	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
+
 		jshint: {
 			all: ['Gruntfile.js', 'lib/*.js']
 		},
@@ -31,7 +34,20 @@ module.exports = function (grunt) {
 				options: {
 					spawn: false
 				}
-			}
+			},
+		
+		},
+		yuidoc: {
+			compile: {
+				name: '<%= pkg.name %>',
+				description: '<%= pkg.description %>',
+				version: '<%= pkg.version %>',
+				url: '<%= pkg.homepage %>',
+				options: {
+					paths: 'lib',
+					outdir: 'docs'
+				}
+			}	
 		}
 	});
 
