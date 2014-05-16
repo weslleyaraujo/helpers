@@ -3,7 +3,8 @@ module.exports = function (grunt) {
 
 	var tasks = [
 		'grunt-contrib-jasmine',
-		'grunt-contrib-jshint'
+		'grunt-contrib-jshint',
+		'grunt-contrib-watch'
 	];
 
 	grunt.initConfig({
@@ -20,6 +21,16 @@ module.exports = function (grunt) {
 					'bower_components/jquery/dist/jquery.js'
 				],
 				specs: 'spec/*.js'
+			}
+		},
+
+		watch: {
+			scripts: {
+				files: ['Gruntfile.js', 'lib/*.js'],
+				tasks: ['jshint', 'jasmine'],
+				options: {
+					spawn: false
+				}
 			}
 		}
 	});
