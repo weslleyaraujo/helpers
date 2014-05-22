@@ -1,55 +1,59 @@
-/**
- * Specs for Date class.
- *
- * @class Date
- */
 describe('Date', function () {
 
 	beforeEach(function() {
 		this.date = new Date('00');
 	});
 
-	/**
-	 * Specs for addhours method
-	 *
-	 * @method addhours
-	 */
 	describe('addhours', function () {
 		it('add one hour to the date', function () {
-			expect(this.date.addHours(1).getHours()).toEqual(23);
+			// given
+			var minutes = 1;
+
+			// when
+			this.date.addHours(minutes);
+
+			// then
+			expect(this.date.getHours()).toEqual(23);
 		});
 	});
 
-	/**
-	 * Specs for removeHours
-	 *
-	 * @method removeHours
-	 */
 	describe('removeHours', function () {
 		it('removes an hour from the date', function () {
-			expect(this.date.removeHours(1).getHours()).toEqual(21);
+			// given
+			var minutes = 1;
+
+			// when
+			this.date.removeHours(1)
+
+			// then
+			expect(this.date.getHours()).toEqual(21);
 		});
 	});
 
-	/**
-	 * Specs for addMinutes
-	 *
-	 * @method addMinutes
-	 */
 	describe('addMinutes', function () {
 		it('add a minute to the date', function () {
-			expect(this.date.addMinutes(1).getMinutes()).toEqual(1);
+			//give
+			var minutes = 1;
+
+			// when
+			this.date.addMinutes(minutes);
+
+			// then
+			expect(this.date.getMinutes()).toEqual(1);
 		});
 	});
 
-	/**
-	 * Specs for removeMinutes
-	 *
-	 * @method removeMinutes
-	 */
 	describe('removeMinutes', function () {
 		it('removes a minute from date', function () {
-			expect(this.date.addMinutes(1).removeMinutes(1).getMinutes()).toEqual(0);
+			// given
+			var minutes = 10;
+
+			// when
+			this.date.addMinutes(minutes)
+			this.date.removeMinutes(minutes);
+
+			// then
+			expect(this.date.getMinutes()).toEqual(0);
 		});
 	});
 
