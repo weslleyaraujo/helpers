@@ -1,0 +1,326 @@
+{
+    "project": {
+        "name": "helpers",
+        "description": "A bunch of helpers for javascript",
+        "version": "0.0.0",
+        "url": "http://github.com/weslleyaraujo/helpers"
+    },
+    "files": {
+        "lib/array.js": {
+            "name": "lib/array.js",
+            "modules": {},
+            "classes": {
+                "Array": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/date.js": {
+            "name": "lib/date.js",
+            "modules": {},
+            "classes": {
+                "Date": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/money.js": {
+            "name": "lib/money.js",
+            "modules": {},
+            "classes": {
+                "Money": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/string.js": {
+            "name": "lib/string.js",
+            "modules": {},
+            "classes": {
+                "String": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Array": {
+            "name": "Array",
+            "shortname": "Array",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/array.js",
+            "line": 1,
+            "description": "Helpers for Array class"
+        },
+        "Date": {
+            "name": "Date",
+            "shortname": "Date",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/date.js",
+            "line": 1,
+            "description": "Helpers for Date"
+        },
+        "Money": {
+            "name": "Money",
+            "shortname": "Money",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/money.js",
+            "line": 2,
+            "description": "Helpers for Money"
+        },
+        "String": {
+            "name": "String",
+            "shortname": "String",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/string.js",
+            "line": 1,
+            "description": "Helpers for String class."
+        }
+    },
+    "classitems": [
+        {
+            "file": "lib/array.js",
+            "line": 8,
+            "description": "Remove accents from string.",
+            "itemtype": "method",
+            "name": "shuffle",
+            "return": {
+                "description": "Returns the array in a shuffle order",
+                "type": "Array"
+            },
+            "class": "Array"
+        },
+        {
+            "file": "lib/date.js",
+            "line": 8,
+            "description": "Add hours to Date",
+            "itemtype": "method",
+            "name": "addHours",
+            "params": [
+                {
+                    "name": "h",
+                    "description": "How much hours to add",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "The Date instance",
+                "type": "Object"
+            },
+            "class": "Date"
+        },
+        {
+            "file": "lib/date.js",
+            "line": 20,
+            "description": "Remove hours to date",
+            "itemtype": "method",
+            "name": "removeHours",
+            "params": [
+                {
+                    "name": "h",
+                    "description": "How much hours to remove",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "The Date instance",
+                "type": "Object"
+            },
+            "class": "Date"
+        },
+        {
+            "file": "lib/date.js",
+            "line": 32,
+            "description": "Add minutes to date",
+            "itemtype": "method",
+            "name": "addMinutes",
+            "params": [
+                {
+                    "name": "m",
+                    "description": "How much minutes to add",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "The Date instance",
+                "type": "Object"
+            },
+            "class": "Date"
+        },
+        {
+            "file": "lib/date.js",
+            "line": 44,
+            "description": "Add minutes to date",
+            "itemtype": "method",
+            "name": "addMinutes",
+            "params": [
+                {
+                    "name": "m",
+                    "description": "How much minutes to add",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "The Date instance",
+                "type": "Object"
+            },
+            "class": "Date"
+        },
+        {
+            "file": "lib/money.js",
+            "line": 18,
+            "description": "Creates a the Money object",
+            "itemtype": "method",
+            "name": "Money",
+            "return": {
+                "description": "The Money instance",
+                "type": "Object"
+            },
+            "class": "Money"
+        },
+        {
+            "file": "lib/money.js",
+            "line": 39,
+            "description": "Format the money",
+            "itemtype": "method",
+            "name": "format",
+            "return": {
+                "description": "The formated money",
+                "type": "String"
+            },
+            "class": "Money"
+        },
+        {
+            "file": "lib/money.js",
+            "line": 55,
+            "description": "Separate thousands with dots",
+            "itemtype": "method",
+            "name": "separateThousands",
+            "return": {
+                "description": "The formated money with dots",
+                "type": "String"
+            },
+            "class": "Money"
+        },
+        {
+            "file": "lib/money.js",
+            "line": 73,
+            "itemtype": "method",
+            "name": "addSymbol",
+            "params": [
+                {
+                    "name": "The",
+                    "description": "symbol to concat with money (defaul R$)",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The formated money",
+                "type": "String"
+            },
+            "class": "Money"
+        },
+        {
+            "file": "lib/money.js",
+            "line": 87,
+            "description": "Gives the string money",
+            "itemtype": "method",
+            "name": "toString",
+            "return": {
+                "description": "The formated money",
+                "type": "String"
+            },
+            "class": "Money"
+        },
+        {
+            "file": "lib/money.js",
+            "line": 104,
+            "description": "Adds Money to Number class",
+            "itemtype": "method",
+            "name": "toMoney",
+            "return": {
+                "description": "The Money instance",
+                "type": "Object"
+            },
+            "class": "Money"
+        },
+        {
+            "file": "lib/money.js",
+            "line": 114,
+            "description": "Adds Money to String class",
+            "itemtype": "method",
+            "name": "toMoney",
+            "return": {
+                "description": "The Money instance",
+                "type": "Object"
+            },
+            "class": "Money"
+        },
+        {
+            "file": "lib/string.js",
+            "line": 8,
+            "description": "Remove accents from string.",
+            "itemtype": "method",
+            "name": "normalize",
+            "return": {
+                "description": "Returns the string without any accent",
+                "type": "String"
+            },
+            "class": "String"
+        },
+        {
+            "file": "lib/string.js",
+            "line": 31,
+            "description": "Creates a slug from string",
+            "itemtype": "method",
+            "name": "toSlug",
+            "return": {
+                "description": "Returns the string like a url slug (just-like-this)",
+                "type": "String"
+            },
+            "class": "String"
+        },
+        {
+            "file": "lib/string.js",
+            "line": 45,
+            "description": "Truncates a given text with a terminator (...) if the length\nis exceeding the number of characteres",
+            "itemtype": "method",
+            "name": "truncate",
+            "params": [
+                {
+                    "name": "n",
+                    "description": "The length of characteres",
+                    "type": "Number"
+                },
+                {
+                    "name": "terminator",
+                    "description": "The terminator to concat with your string (default '...')",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns the string with the number of characteres specified",
+                "type": "String"
+            },
+            "class": "String"
+        }
+    ],
+    "warnings": []
+}
