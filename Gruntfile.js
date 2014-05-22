@@ -20,9 +20,6 @@ module.exports = function (grunt) {
 				'lib/*.js'
 			],
 			options: {
-				vendor: [
-					'bower_components/jquery/dist/jquery.js'
-				],
 				specs: 'spec/*.js'
 			}
 		},

@@ -16,7 +16,7 @@ describe('Date', function () {
 	 */
 	describe('addhours', function () {
 		it('add one hour to the date', function () {
-			expect(this.date.addHours(1).getHours()).toBe(23);
+			expect(this.date.addHours(1).getHours()).toEqual(23);
 		});
 	});
 
@@ -27,7 +27,7 @@ describe('Date', function () {
 	 */
 	describe('removeHours', function () {
 		it('removes an hour from the date', function () {
-			expect(this.date.removeHours(1).getHours()).toBe(21);
+			expect(this.date.removeHours(1).getHours()).toEqual(21);
 		});
 	});
 
@@ -38,7 +38,7 @@ describe('Date', function () {
 	 */
 	describe('addMinutes', function () {
 		it('add a minute to the date', function () {
-			expect(this.date.addMinutes(1).getMinutes()).toBe(1);
+			expect(this.date.addMinutes(1).getMinutes()).toEqual(1);
 		});
 	});
 
@@ -49,7 +49,7 @@ describe('Date', function () {
 	 */
 	describe('removeMinutes', function () {
 		it('removes a minute from date', function () {
-			expect(this.date.addMinutes(1).removeMinutes(1).getMinutes()).toBe(0);
+			expect(this.date.addMinutes(1).removeMinutes(1).getMinutes()).toEqual(0);
 		});
 	});
 
